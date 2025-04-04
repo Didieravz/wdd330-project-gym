@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Finder</title>
+    <link rel="icon" href="images/GymIcon.png">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
-    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script type="module" src="js/app.js"></script>
+    <script defer type="module" src="js/app.js"></script>
 </head>
 
 <body>
-    <header id="header"> </header>
-    <main>
-        <section class="search-container">
-            <input type="text" id="search" placeholder="Search for a city or place...">
-            <button id="search-btn">Search</button>
-        </section>
-        <section id="map-container">
-            <h2>Find a Gym Near You</h2>
-            <div id="map"></div>
-        </section>
+    <header id="header"></header>
+    <main class="container">
+        <h1>Welcome to Gym Finder</h1>
+        <p>Find the ideal gym for you and get the best workout plan.</p>
+
+        <!-- Navigation Buttons -->
+        <div class="buttons">
+            <button id="find-gym">Find Gyms</button>
+            <button id="register">Sign Up</button>
+            <button id="get-diet">Get Diet Plan</button>
+        </div>
     </main>
     <footer id="footer"></footer>
 
