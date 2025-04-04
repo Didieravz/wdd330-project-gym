@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Gym</title>
+    <link rel="icon" href="../images/GymIcon.png">
+    <link rel="stylesheet" href="../css/gyms.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script defer src="../js/gyms.js" type="module"></script>
+    <script defer src="../js/utils.js" type="module"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <section class="search-container">
+            <input type="text" id="search" placeholder="Search for a city or place...">
+            <button id="search-btn">Search</button>
+        </section>
+        <section id="map-container">
+            <h2>Find a Gym Near You</h2>
+            <div id="map"></div>
+        </section>
+        <h1>Nearby Gyms</h1>
+        <div id="gym-list"></div>
+    </main>
+    <footer id="footer"></footer>
+</body>
+
+</html>

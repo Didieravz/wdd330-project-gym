@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Registration</title>
+    <link rel="icon" href="../images/GymIcon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script defer src="../js/utils.js" type="module"></script>
+    <script defer src="../js/register.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main class="register-container">
+        <div class="register-card">
+            <h1><i class="fas fa-dumbbell"></i> Membership Registration</h1>
+
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="gym-select"><i class="fas fa-building"></i> Gym:</label>
+                    <select id="gym-select" name="gym" required>
+                        <!-- JavaScript dynamically inserts content -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. María González" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone"></i> Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 3001234567">
+                </div>
+
+                <div class="form-group">
+                    <label for="plan"><i class="fas fa-clipboard-list"></i> Membership Plan:</label>
+                    <select id="plan" name="plan" required>
+                        <!-- JavaScript dynamically inserts content -->
+                    </select>
+                    <div id="plan-details" class="plan-details"></div>
+                </div>
+
+                <div class="form-group terms-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I accept the <a href="#" id="terms-link">terms and conditions</a></label>
+                    <div id="terms-error" class="error-message">You must accept the terms and conditions</div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Complete Registration
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Diet Plan</title>
+    <link rel="icon" href="../images/GymIcon.png">
+    <link rel="stylesheet" href="../css/diet.css">
+    <script defer src="../js/diet.js" type="module"></script>
+    <script defer src="../js/utils.js" type="module"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main>
+        <h1>Personalized Diet Plan</h1>
+        <p>Enter your details and choose a goal to get a diet plan.</p>
+
+        <form id="diet-form">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" name="weight" id="weight" placeholder="Weight in kg" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" name="height" id="height" placeholder="Height in cm" required>
+
+            <label for="goal">Goal:</label>
+            <select name="goal" id="goal">
+                <option value="weight_loss">Weight Loss</option>
+                <option value="muscle_gain">Muscle Gain</option>
+            </select>
+
+            <button type="submit">Get Diet</button>
+        </form>
+
+        <h2>Results:</h2>
+        <div id="diet-results" class="results-container"></div>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+
+</html>
