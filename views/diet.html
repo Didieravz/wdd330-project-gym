@@ -14,11 +14,11 @@
 <body>
     <header id="header"></header>
 
-    <main>
-        <h1>Personalized Diet Plan</h1>
-        <p>Enter your details and choose a goal to get a diet plan.</p>
+    <main class="main-container">
+        <h1 class="title">Personalized Diet Plan</h1>
+        <p class="subtitle">Enter your details and choose a goal to get a diet plan.</p>
 
-        <form id="diet-form">
+        <form id="diet-form" class="diet-form">
             <label for="weight">Weight (kg):</label>
             <input type="number" name="weight" id="weight" placeholder="Weight in kg" required>
 
@@ -31,10 +31,10 @@
                 <option value="muscle_gain">Muscle Gain</option>
             </select>
 
-            <button type="submit">Get Diet</button>
+            <button type="submit" class="submit-button">Get Diet</button>
         </form>
 
-        <h2>Results:</h2>
+        <h2 class="results-title">Results:</h2>
         <div id="diet-results" class="results-container"></div>
     </main>
 
